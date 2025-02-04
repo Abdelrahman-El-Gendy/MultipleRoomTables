@@ -1,7 +1,9 @@
-package com.example.multipleroomtables.entities
+package com.example.multipleroomtables.relations
 
 import androidx.room.Embedded
 import androidx.room.Relation
+import com.example.multipleroomtables.entities.Director
+import com.example.multipleroomtables.entities.School
 
 data class SchoolAndDirector(
 
