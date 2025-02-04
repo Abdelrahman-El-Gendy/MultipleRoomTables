@@ -1,9 +1,10 @@
-package com.example.multipleroomtables.relations
+package com.example.multipleroomtables.entities.relations
 
 import androidx.room.Entity
 
+
 @Entity(primaryKeys = ["studentName", "subjectName"])
-data class StudentSubjectCrossReference(
+data class StudentSubjectCrossRef(
     val studentName: String,
     val subjectName: String
 )

@@ -6,5 +6,5 @@ import androidx.room.PrimaryKey
 @Entity
 data class School(
     @PrimaryKey(autoGenerate = false)
-    val schoolName:String
+    val schoolName: String
 )

@@ -1,4 +1,4 @@
-package com.example.multipleroomtables.relations
+package com.example.multipleroomtables.entities.relations
 
 import androidx.room.Embedded
 import androidx.room.Entity
@@ -8,13 +8,12 @@ import com.example.multipleroomtables.entities.Student
 import com.example.multipleroomtables.entities.Subject
 
 
-@Entity
-data class SubjectsWithStudents(
+data class SubjectWithStudents(
     @Embedded val subject: Subject,
     @Relation(
         parentColumn = "subjectName",
         entityColumn = "studentName",
-        associateBy = Junction(StudentSubjectCrossReference::class)
+        associateBy = Junction(StudentSubjectCrossRef::class)
     )
-    val student: List<Student>
+    val students: List<Student>
 )
